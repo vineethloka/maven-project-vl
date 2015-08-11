@@ -17,7 +17,7 @@ public class HelloMavenTest extends FunctionalTestCase {
 		MuleEvent event = runFlow("retrieveFlights");
 		String contentType = 
 				event.getMessage().getOutboundProperty("Content-Type");
-		assertEquals("applciation/json", contentType);
+		assertEquals("application/json", contentType);
 		
 	}
 	
